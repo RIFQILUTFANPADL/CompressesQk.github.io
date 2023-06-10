@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kiki Compress.io</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <div class="background-animation"></div>
+  <div class="page-title">
+    <h1>Kiki Compress.io</h1>
+  </div>
+  <div class="container">
+
+    <div class="grid-container">
+      <div class="left-column">
+        <div class="card">
+          <h2>Image Compression</h2>
+          <input type="file" id="imageInput" accept="image/*" class="form-control-file">
+          <button onclick="compressImage()" class="btn btn-primary">Compress Image</button>
+          <div id="imageResult" class="hidden"></div>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="card">
+          <h2>Audio Compression</h2>
+          <input type="file" id="audioInput" accept="audio/*" class="form-control-file">
+          <button onclick="compressAudio()" class="btn btn-primary">Compress Audio</button>
+          <audio id="previewAudio" controls class="hidden"></audio>
+          <a id="downloadLink" class="btn btn-primary" download style="display: none;">Download Original Audio</a>
+      
+          <h3>Compressed Audio</h3>
+          <audio id="compressedPreviewAudio" controls class="hidden"></audio>
+          <a id="compressedDownloadLink" class="btn btn-primary" download style="display: none;">Download Compressed Audio</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
